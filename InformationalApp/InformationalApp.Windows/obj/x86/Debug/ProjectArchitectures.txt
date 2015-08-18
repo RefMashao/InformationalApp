@@ -1,0 +1,1 @@
+d:\mod\documents\visual studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\InformationalApp.Windows.csproj;x86
