@@ -124,17 +124,21 @@ namespace InformationalApp.InformationalApp_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "InformationalApp.LoginPage";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "InformationalApp.CoursePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "InformationalApp.MainPage";
+            _typeNameTable[3] = "InformationalApp.InstitutionPage";
+            _typeNameTable[4] = "InformationalApp.LoginPage";
+            _typeNameTable[5] = "InformationalApp.MainPage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::InformationalApp.LoginPage);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::InformationalApp.CoursePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::InformationalApp.MainPage);
+            _typeTable[3] = typeof(global::InformationalApp.InstitutionPage);
+            _typeTable[4] = typeof(global::InformationalApp.LoginPage);
+            _typeTable[5] = typeof(global::InformationalApp.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -169,8 +173,10 @@ namespace InformationalApp.InformationalApp_Windows_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_LoginPage() { return new global::InformationalApp.LoginPage(); }
-        private object Activate_3_MainPage() { return new global::InformationalApp.MainPage(); }
+        private object Activate_0_CoursePage() { return new global::InformationalApp.CoursePage(); }
+        private object Activate_3_InstitutionPage() { return new global::InformationalApp.InstitutionPage(); }
+        private object Activate_4_LoginPage() { return new global::InformationalApp.LoginPage(); }
+        private object Activate_5_MainPage() { return new global::InformationalApp.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -182,9 +188,9 @@ namespace InformationalApp.InformationalApp_Windows_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  InformationalApp.LoginPage
+            case 0:   //  InformationalApp.CoursePage
                 userType = new global::InformationalApp.InformationalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LoginPage;
+                userType.Activator = Activate_0_CoursePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -197,9 +203,23 @@ namespace InformationalApp.InformationalApp_Windows_XamlTypeInfo
                 xamlType = new global::InformationalApp.InformationalApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  InformationalApp.MainPage
+            case 3:   //  InformationalApp.InstitutionPage
                 userType = new global::InformationalApp.InformationalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_InstitutionPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  InformationalApp.LoginPage
+                userType = new global::InformationalApp.InformationalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_LoginPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  InformationalApp.MainPage
+                userType = new global::InformationalApp.InformationalApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

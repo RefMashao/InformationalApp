@@ -10,10 +10,10 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="360,37,0,0" TextWrapping="Wrap" Text="Login Page" VerticalAlignment="Top" Height="65" Width="304" FontSize="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="360,168,0,0" TextWrapping="Wrap" Text="Username/ Email" VerticalAlignment="Top" Height="56" Width="119" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Margin="588,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="246"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="588,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="246"/>
         <TextBlock HorizontalAlignment="Left" Margin="360,287,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="37" Width="138" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Margin="588,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="50"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="437,403,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.074,0.114" Height="76" Width="201" FontSize="36"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="588,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="50"/>
+        <Button x:ConnectionId='1' Content="Login" HorizontalAlignment="Left" Margin="437,403,0,0" VerticalAlignment="Top"  Height="76" Width="201" FontSize="36"                       />
 
     </Grid>
 </Page>

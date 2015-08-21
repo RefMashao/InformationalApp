@@ -15,8 +15,21 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Courses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\CoursesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Enroll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Institution.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\InstitutionsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\InstitutionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\LoginView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Register.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CoursePage.xaml.cs">
+      <DependentUpon>CoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)InstitutionPage.xaml.cs">
+      <DependentUpon>InstitutionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -25,6 +38,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)CoursePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)InstitutionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

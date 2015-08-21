@@ -5,7 +5,6 @@ using System.Text;
 
 namespace InformationalApp.Classes
 {
-    [Table("Registers")]
     class Register
     {
         [PrimaryKey, AutoIncrement]

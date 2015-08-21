@@ -32,7 +32,7 @@ namespace InformationalApp
 
         private async void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-           Register newUser = new Register()
+            Enroll newUser = new Enroll()
             {
 
                 name = txtName.Text,
@@ -45,8 +45,13 @@ namespace InformationalApp
                 password = txtPassword.Text
 
             };
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Register.db");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
             await conn.InsertAsync(newUser);
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(LoginPage));
         }
 
         

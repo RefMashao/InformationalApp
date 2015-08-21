@@ -36,3 +36,13 @@ d:\mod\documents\visual studio 2013\Projects\InformationalApp\InformationalApp\I
 d:\mod\documents\visual studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 d:\mod\documents\visual studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\ProjectArchitectures.txt
 d:\mod\documents\visual studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\InformationalApp.Windows.csproj.GenerateResource.Cache
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InstitutionPage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\InstitutionPage.g.i.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\InstitutionPage.g.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\InstitutionPage.xaml
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\InstitutionPage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\CoursePage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\CoursePage.g.i.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\CoursePage.g.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\CoursePage.xaml
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\obj\x86\Debug\CoursePage.xbf

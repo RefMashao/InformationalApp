@@ -1,0 +1,1 @@
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\InformationalApp.WindowsPhone.csproj;x86

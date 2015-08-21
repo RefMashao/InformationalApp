@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InformationalApp.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,24 @@ namespace InformationalApp
     /// </summary>
     public sealed partial class LoginPage : Page
     {
+        private LoginView view;
         public LoginPage()
         {
             this.InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            view = new LoginView();
+            string email = txtUsername.Text;
+            string pass = txtPassword.Text;
+
+            if (view.getData(email, pass) != null)
+            {
+                this.Frame.Navigate(typeof(InstitutionPage));
+            }
+        }
+
+       
     }
 }

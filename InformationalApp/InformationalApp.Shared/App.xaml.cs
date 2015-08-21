@@ -33,7 +33,7 @@ namespace InformationalApp
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
-        SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Register.db");
+        SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -59,13 +59,17 @@ namespace InformationalApp
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-            this.dbPath = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "Register.db");
+            this.dbPath = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "Registers.db");
             using (var dbase = new SQLite.SQLiteConnection(dbPath))
             {
                 dbase.CreateTable<Register>();
+                dbase.CreateTable<Enroll>();
+                dbase.CreateTable<Institution>();
+                dbase.CreateTable<Courses>();
                 //dbase.CreateTable<Login>();
-
+                //insertManually();
             }
+
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -174,10 +178,21 @@ namespace InformationalApp
             };
             if (Register != null)
             {
-                SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Register.db");
+                SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
                 await conn.InsertAsync(Register);
             }
 
+        }
+        private void insertManually()
+        {
+            using (var db = new SQLite.SQLiteConnection(dbPath))
+            {
+                int success = db.Insert(new Institution()
+                {
+                    Id = 0,
+                    insitution = "TUT"
+                });
+            }
         }
         private async Task AddLoginAsync()
         {
@@ -186,7 +201,7 @@ namespace InformationalApp
             {
               
             };
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Register.db");
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
             await conn.InsertAsync(Login);
         }
     }
