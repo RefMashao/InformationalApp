@@ -49,6 +49,12 @@
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\CoursePage.xbf">
+      <PackagePath>CoursePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\InstitutionPage.xbf">
+      <PackagePath>InstitutionPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
     </AppxPackagedFile>

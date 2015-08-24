@@ -24,11 +24,14 @@ namespace InformationalApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private InstitutionViewModel model = null;
+
         public MainPage()
         {
             this.InitializeComponent();
            // this.NavigationCacheMode = NavigationCacheMode.Required;
         }
+        
 
         private async void btnRegister_Click(object sender, RoutedEventArgs e)
         {
@@ -47,6 +50,33 @@ namespace InformationalApp
             };
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
             await conn.InsertAsync(newUser);
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            model = new InstitutionViewModel();
+            if (model.getInstitution() == null)
+            {
+                model.addInstitution("Tshwane University of Technology");
+                model.addInstitution("University of Johannesburg");
+                model.addInstitution("Jeppe College");
+                model.addInstitution("University of Limpopo");
+                model.addInstitution("Tshwane North College");
+                model.addInstitution("Tshwane University of Technology");
+                model.addInstitution("University of Johannesburg");
+                model.addInstitution("Jeppe College");
+                model.addInstitution("University of Limpopo");
+                model.addInstitution("Tshwane North College");
+            }
+            if (model.getCourse() == null)
+            {
+                model.addCourse("IT",26);
+                model.addCourse("IT", 26);
+                model.addCourse("IT", 26);
+                model.addCourse("IT", 26);
+                model.addCourse("IT", 26);
+                model.addCourse("IT", 26);
+            }
+            base.OnNavigatedTo(e);
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)

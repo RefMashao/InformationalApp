@@ -36,3 +36,13 @@ D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\I
 D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\ProjectArchitectures.txt
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\CoursePage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\bin\x86\Debug\InstitutionPage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\CoursePage.g.i.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\CoursePage.g.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\InstitutionPage.g.i.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\InstitutionPage.g.cs
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\CoursePage.xaml
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\InstitutionPage.xaml
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\CoursePage.xbf
+D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.WindowsPhone\obj\x86\Debug\InstitutionPage.xbf

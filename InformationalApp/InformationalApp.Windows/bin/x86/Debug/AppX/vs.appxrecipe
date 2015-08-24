@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InformationalApp.Windows.exe">
       <PackagePath>InformationalApp.Windows.exe</PackagePath>
-      <Modified>2015-08-21T07:54:37.522</Modified>
+      <Modified>2015-08-24T09:34:12.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>

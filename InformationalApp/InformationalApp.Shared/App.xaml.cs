@@ -30,6 +30,7 @@ namespace InformationalApp
     public sealed partial class App : Application
     {
         public string dbPath { get; set; }
+        private Institution institution = null;
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
@@ -51,7 +52,7 @@ namespace InformationalApp
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -65,10 +66,13 @@ namespace InformationalApp
                 dbase.CreateTable<Register>();
                 dbase.CreateTable<Enroll>();
                 dbase.CreateTable<Institution>();
-                dbase.CreateTable<Courses>();
+               dbase.CreateTable<Courses>();
+                //await AddDataAsync();
                 //dbase.CreateTable<Login>();
                 //insertManually();
             }
+            //institution = new Institution();
+           
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -183,26 +187,32 @@ namespace InformationalApp
             }
 
         }
-        private void insertManually()
+        private async Task CreateDatabaseAsync()
         {
-            using (var db = new SQLite.SQLiteConnection(dbPath))
-            {
-                int success = db.Insert(new Institution()
-                {
-                    Id = 0,
-                    insitution = "TUT"
-                });
-            }
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
+            await conn.CreateTableAsync<Institution>();
+            await conn.CreateTableAsync<Courses>();
+            await conn.CreateTableAsync<Enroll>();
+          
         }
-        private async Task AddLoginAsync()
+       
+        private async Task AddDataAsync()
         {
 
-            var Login = new Login()
+            var institutions = new List<Institution>()
             {
-              
+                new Institution()
+                {
+                     
+                      Id = 1,
+                   insitution = "tut",
+                }
+             
+                
             };
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
-            await conn.InsertAsync(Login);
+            await conn.InsertAsync(institutions);
         }
+     
     }
 }

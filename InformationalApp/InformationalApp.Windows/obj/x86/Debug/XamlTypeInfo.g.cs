@@ -559,3 +559,4 @@ namespace InformationalApp.InformationalApp_Windows_XamlTypeInfo
 }
 
 
+
