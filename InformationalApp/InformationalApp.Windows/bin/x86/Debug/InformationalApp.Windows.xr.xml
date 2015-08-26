@@ -30,8 +30,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
@@ -46,6 +46,17 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="InformationalApp.CoursePage" />
+    <RootType FullName="InformationalApp.DashBoardPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="InformationalApp.HowTheyWorkPage" />
     <RootType FullName="InformationalApp.InstitutionPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -58,5 +69,6 @@
     </RootType>
     <RootType FullName="InformationalApp.LoginPage" />
     <RootType FullName="InformationalApp.MainPage" />
+    <RootType FullName="InformationalApp.PossibleCareerPage" />
   </Roots.RootTypes>
 </Roots>

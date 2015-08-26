@@ -12,6 +12,7 @@ namespace InformationalApp.Classes
 
         private InformationalApp.App app = (Application.Current as App);
          private ObservableCollection<CoursesViewModel> course;
+         private ObservableCollection<PossibleViewModel> name;
         public ObservableCollection<CoursesViewModel> Course
         {
             get { return course; }
@@ -45,6 +46,41 @@ namespace InformationalApp.Classes
                 }
             }
             return course;
+        }
+        public ObservableCollection<InstitutionViewModel> courses
+        {
+            get { return courses; }
+
+            set
+            {
+                if (courses == value)
+                {
+                    return;
+                }
+                courses = value;
+
+            }
+        }
+
+        public ObservableCollection<PossibleViewModel> getPossibleCareer(string names)
+        {
+            name = new ObservableCollection<PossibleViewModel>();
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                //var query = db.Table<Courses>();
+                var query = db.Query<Possible_Careers>("select * from Possible_Careers where course ='" + names + "'");
+                foreach (var ins in query)
+                {
+                    var ins1 = new PossibleViewModel()
+                    {
+                        ID = ins.Id,
+                        Name = ins.name,
+                        Course = ins.course
+                    };
+                    name.Add(ins1);
+                }
+            }
+            return name;
         }
 
         private ObservableCollection<InstitutionViewModel> institution;
@@ -85,7 +121,7 @@ namespace InformationalApp.Classes
         {
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
             {
-                var query = db.Query<Register>("select * from Enroll where email ='"+email+"' and password = '"+password+"'").Single();
+                var query = db.Query<Register>("select * from Enroll where email ='" + email + "' and password = '" + password + "'").FirstOrDefault();
                 return query;
             }
         }
@@ -97,7 +133,14 @@ namespace InformationalApp.Classes
                 return query;
             }
         }
-
+        public Possible_Careers getCourseId(string name)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var query = db.Query<Possible_Careers>("select * from Possible_Careers where course ='" + name + "'").FirstOrDefault();
+                return query;
+            }
+        }
      
     }
 }

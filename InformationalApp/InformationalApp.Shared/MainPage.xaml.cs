@@ -35,6 +35,7 @@ namespace InformationalApp
 
         private async void btnRegister_Click(object sender, RoutedEventArgs e)
         {
+            string idNo = txtIdNumber.Text;
             Enroll newUser = new Enroll()
             {
 
@@ -50,6 +51,15 @@ namespace InformationalApp
             };
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
             await conn.InsertAsync(newUser);
+            if (model.getUser(idNo) == null)
+            {
+                messageBox("You are not registered");
+            }
+            else {
+                messageBox("You are successfully registered");
+            }
+
+
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -61,20 +71,40 @@ namespace InformationalApp
                 model.addInstitution("Jeppe College");
                 model.addInstitution("University of Limpopo");
                 model.addInstitution("Tshwane North College");
-                model.addInstitution("Tshwane University of Technology");
-                model.addInstitution("University of Johannesburg");
-                model.addInstitution("Jeppe College");
-                model.addInstitution("University of Limpopo");
-                model.addInstitution("Tshwane North College");
+              
             }
             if (model.getCourse() == null)
             {
-                model.addCourse("IT",26);
-                model.addCourse("IT", 26);
-                model.addCourse("IT", 26);
-                model.addCourse("IT", 26);
-                model.addCourse("IT", 26);
-                model.addCourse("IT", 26);
+                model.addCourse("Information Technology",64);
+                model.addCourse("Policing", 64);
+                model.addCourse("mechanical Engineering", 64);
+                model.addCourse("Analytical chemistry", 65);
+                model.addCourse("mechanical Engineering", 65);
+                model.addCourse("Phamaceutical", 65);
+                model.addCourse("Local Government Management", 66);
+                model.addCourse("Policing", 66);
+                model.addCourse("Accounting", 66);
+                model.addCourse("Computer Sciences", 67);
+                model.addCourse("Education", 67);
+                model.addCourse("Phamaceutical", 67);
+                model.addCourse("Road and Traffic Management", 68);
+                model.addCourse("Local Government Management", 68);
+                model.addCourse("Information Technology", 68);
+                
+            }
+            if (model.getCareer() == null)
+            {
+                model.addCareers("Software Developer \n Telecommunication \n Business Analyst", "Information Technology");
+                model.addCareers("Hire Resolve \n Construct Executive Research \n Maintanance", "mechanical Engineering");
+                model.addCareers("Detective Service \n Criminal Investigator", "Policing");
+                model.addCareers("Pharmacist \n Surgeon \n Medical Representative - Pharmaceutical Industry ", "Phamaceutical");
+                model.addCareers("Chartered Accountant \n Accounting technician\nBusiness Analyst", "Accounting");
+                model.addCareers("Pharmacist \n Laboratory Technician \nLab Analyst", "Analytical chemistry");
+                model.addCareers("Supply chain Management \n Finacial Management Support\nConsultant: Waste Management", "Local Government Management");
+                model.addCareers("Software Developer \n Data Analyst \n Software Engineer ", "Computer Sciences");
+                model.addCareers("Educator \n Lecturer \n Professor and Head of Department ", "Education");
+                model.addCareers("Traffic Accommodation Officer \n Specialist: Risk Management \n Traffic Cop ", "Road and Traffic Management");
+               
             }
             base.OnNavigatedTo(e);
         }
@@ -84,6 +114,10 @@ namespace InformationalApp
             this.Frame.Navigate(typeof(LoginPage));
         }
 
-        
+        private async void messageBox(string msg)
+        {
+            var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
+            await msgDlg.ShowAsync();
+        }
     }
 }

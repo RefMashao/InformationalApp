@@ -23,9 +23,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)Classes\InstitutionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Login.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\LoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\PossibleViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Possible_Careers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Register.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoursePage.xaml.cs">
       <DependentUpon>CoursePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DashBoardPage.xaml.cs">
+      <DependentUpon>DashBoardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)HowTheyWorkPage.xaml.cs">
+      <DependentUpon>HowTheyWorkPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)InstitutionPage.xaml.cs">
       <DependentUpon>InstitutionPage.xaml</DependentUpon>
@@ -36,9 +44,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PossibleCareerPage.xaml.cs">
+      <DependentUpon>PossibleCareerPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)CoursePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)DashBoardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)HowTheyWorkPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -51,6 +70,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)PossibleCareerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

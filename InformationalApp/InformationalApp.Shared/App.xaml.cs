@@ -52,7 +52,7 @@ namespace InformationalApp
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected  override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -67,6 +67,7 @@ namespace InformationalApp
                 dbase.CreateTable<Enroll>();
                 dbase.CreateTable<Institution>();
                dbase.CreateTable<Courses>();
+               dbase.CreateTable<Possible_Careers>();
                 //await AddDataAsync();
                 //dbase.CreateTable<Login>();
                 //insertManually();
@@ -170,49 +171,10 @@ namespace InformationalApp
             return dbexist;
 
         }
-        private async Task AddUsersAsync()
-        {
-
-            var Register = new Register()
-            {
-                //name = "Mmalerato",
-                //surname = "Thetela"
-
-
-            };
-            if (Register != null)
-            {
-                SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
-                await conn.InsertAsync(Register);
-            }
-
-        }
-        private async Task CreateDatabaseAsync()
-        {
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
-            await conn.CreateTableAsync<Institution>();
-            await conn.CreateTableAsync<Courses>();
-            await conn.CreateTableAsync<Enroll>();
-          
-        }
+    
+      
        
-        private async Task AddDataAsync()
-        {
-
-            var institutions = new List<Institution>()
-            {
-                new Institution()
-                {
-                     
-                      Id = 1,
-                   insitution = "tut",
-                }
-             
-                
-            };
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
-            await conn.InsertAsync(institutions);
-        }
+   
      
     }
 }

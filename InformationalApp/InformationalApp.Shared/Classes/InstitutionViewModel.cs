@@ -37,6 +37,20 @@ namespace InformationalApp.Classes
                 name = value;
             }
         }
+        private string career = string.Empty;
+        public string Career
+        {
+            get { return career; }
+
+            set
+            {
+                if (career == value)
+                { return; }
+
+                career = value;
+            }
+        }
+
         public void addInstitution(string name)
         {
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
@@ -76,6 +90,38 @@ namespace InformationalApp.Classes
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
             {
                 var select = db.Query<Courses>("select * from Courses").FirstOrDefault();
+                return select;
+            }
+        }
+        public void addCareers(string career, string name)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var insert = db.Insert(new Possible_Careers()
+                {
+                    Id = 0,
+                    name = career,
+                    course = name
+
+                });
+
+            }
+        }
+        public Possible_Careers getCareer()
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Possible_Careers>("select * from Possible_Careers").FirstOrDefault();
+                return select;
+            }
+        }
+
+
+        public Enroll getUser(string idNo)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Enroll>("select * from Enroll where idNumber='"+idNo+"'").FirstOrDefault();
                 return select;
             }
         }

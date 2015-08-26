@@ -34,11 +34,28 @@ namespace InformationalApp
             view = new LoginView();
             string email = txtUsername.Text;
             string pass = txtPassword.Text;
-
-            if (view.getData(email, pass) != null)
+            if (txtPassword.Text != "" && txtUsername.Text != "")
             {
-                this.Frame.Navigate(typeof(InstitutionPage));
+                if (view.getData(email, pass) != null)
+                {
+                    this.Frame.Navigate(typeof(InstitutionPage));
+                }
+                else
+                {
+                    messageBox("You have entered wrong password");
+                }
             }
+            else
+            {
+                messageBox("please enter values");
+
+            }
+        }
+        
+        private async void messageBox(string msg)
+        {
+            var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
+            await msgDlg.ShowAsync();
         }
 
        

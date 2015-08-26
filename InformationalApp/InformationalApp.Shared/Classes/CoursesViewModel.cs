@@ -21,17 +21,18 @@ namespace InformationalApp.Classes
             }
         }
 
+
         private string name = string.Empty;
         public string Name
         {
-            get { return name; }
+            get { return course; }
 
             set
             {
-                if (name == value)
+                if (course == value)
                 { return; }
 
-                name = value;
+                course = value;
             }
         }
         private int institution = 0;
@@ -45,6 +46,19 @@ namespace InformationalApp.Classes
                     return;
                 }
                 institution = value;
+            }
+        }
+        private string course = string.Empty;
+        public string Course
+        {
+            get { return course; }
+
+            set
+            {
+                if (course == value)
+                { return; }
+
+                course = value;
             }
         }
     }

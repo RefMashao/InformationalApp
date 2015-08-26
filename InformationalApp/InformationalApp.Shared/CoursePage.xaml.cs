@@ -25,7 +25,9 @@ namespace InformationalApp
     public sealed partial class CoursePage : Page
     {
         LoginView model;
+        Institution i = null;
         ObservableCollection<CoursesViewModel> list;
+        private string item;
         public CoursePage()
         {
             this.InitializeComponent();
@@ -36,11 +38,12 @@ namespace InformationalApp
             model = new LoginView();
             
             //
-            
-            Institution i = model.getInstitutionId(val);
+            i = new Institution();
+            i= model.getInstitutionId(val);
             string me = i.insitution;
             int id = i.Id;
-            messageBox(me+"");
+          
+           // messageBox(me+"");
             list = model.getCourses(id);
            // list = model.getCourses(2);
             foreach (var inst in list)
@@ -59,12 +62,25 @@ namespace InformationalApp
         }
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var sel = listView.SelectedItems.ToArray();
 
+            if (sel != null)
+            {
+                foreach (var a in sel)
+                {
+                    item = a.ToString();
+                }
+            }
+            //messageBox("You selected "+item);
+           
+            this.Frame.Navigate(typeof(DashBoardPage),item);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(InstitutionPage));
         }
+        
+
     }
 }

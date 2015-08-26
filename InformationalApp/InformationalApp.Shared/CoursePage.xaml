@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="542" Margin="60,130,0,0" VerticalAlignment="Top" Width="1136" SelectionChanged="ListView_SelectionChanged"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="7,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.438,-1.447" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="270,29,0,0" TextWrapping="Wrap" Text="List of Courses Available!!!" VerticalAlignment="Top" Width="263" Height="37" FontSize="36"/>
+        <TextBlock x:Name="tbDisplay" HorizontalAlignment="Left" Margin="270,29,0,0" TextWrapping="Wrap" Text="List of Courses Available!!!" VerticalAlignment="Top" Width="263" Height="37" FontSize="36" />
 
     </Grid>
 </Page>
