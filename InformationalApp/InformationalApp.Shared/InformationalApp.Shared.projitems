@@ -26,11 +26,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)Classes\PossibleViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Possible_Careers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Register.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectOfferedViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsDone.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsDoneViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsOffered.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoursePage.xaml.cs">
       <DependentUpon>CoursePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)DashBoardPage.xaml.cs">
       <DependentUpon>DashBoardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)forgetPasswordPage.xaml.cs">
+      <DependentUpon>forgetPasswordPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)HowTheyWorkPage.xaml.cs">
       <DependentUpon>HowTheyWorkPage.xaml</DependentUpon>
@@ -47,6 +54,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)PossibleCareerPage.xaml.cs">
       <DependentUpon>PossibleCareerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SubjectOfferedPage.xaml.cs">
+      <DependentUpon>SubjectOfferedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SubjectsDonePage.xaml.cs">
+      <DependentUpon>SubjectsDonePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UpdateInformationPage.xaml.cs">
+      <DependentUpon>UpdateInformationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UpdatePage.xaml.cs">
+      <DependentUpon>UpdatePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)CoursePage.xaml">
@@ -54,6 +73,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)DashBoardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)forgetPasswordPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,6 +97,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)PossibleCareerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)SubjectOfferedPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)SubjectsDonePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UpdateInformationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UpdatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

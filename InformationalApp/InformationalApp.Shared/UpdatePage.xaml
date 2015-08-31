@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="InformationalApp.UpdatePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InformationalApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/home-background7.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="275,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="498" FontSize="48" Text="Update Information">
+
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="267,152,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="26" Width="111" FontSize="24"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="474,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="56"/>
+        <TextBlock HorizontalAlignment="Left" Margin="267,207,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Height="35" Width="111" FontSize="24"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Margin="474,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,295,0,0" TextWrapping="Wrap" Text="Id Number" VerticalAlignment="Top" Height="26" Width="140" FontSize="24"/>
+        <TextBox x:Name="txtIdNumber" HorizontalAlignment="Left" Margin="474,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.058,0.571" Width="270" Height="56"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,358,0,0" TextWrapping="Wrap" Text="Contacts" VerticalAlignment="Top" Height="32" Width="127" FontSize="24"/>
+        <TextBox x:Name="txtContacts" HorizontalAlignment="Left" Margin="474,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="51"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,442,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Height="29" Width="111" FontSize="24"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="474,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,513,0,0" TextWrapping="Wrap" Text="Province" VerticalAlignment="Top" Height="39" Width="96" FontSize="24"/>
+        <TextBox x:Name="txtProvince" HorizontalAlignment="Left" Margin="474,501,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="51"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="356,626,0,0" VerticalAlignment="Top" Width="209" Height="72" FontSize="36" Click="Button_Click"/>
+
+
+    </Grid>
+</Page>

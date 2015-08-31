@@ -36,28 +36,48 @@ namespace InformationalApp
         private async void btnRegister_Click(object sender, RoutedEventArgs e)
         {
             string idNo = txtIdNumber.Text;
-            Enroll newUser = new Enroll()
-            {
+            string name,surname,idNumber,contacts, address, email, password, province;
+                name = txtName.Text;
+                surname = txtSurname.Text;
+                idNumber = txtIdNumber.Text;
+                contacts = txtContacts.Text;
+                address = txtAddress.Text;
+                province = txtProvince.Text;
+                email = txtEmail.Text;
+                password = txtPassword.Text;
 
-                name = txtName.Text,
-                surname = txtSurname.Text,
-                idNumber = txtIdNumber.Text,
-                contacts = txtContacts.Text,
-                address = txtAddress.Text,
-                province = txtProvince.Text,
-                email = txtEmail.Text,
-                password = txtPassword.Text
 
-            };
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
-            await conn.InsertAsync(newUser);
-            if (model.getUser(idNo) == null)
-            {
-                messageBox("You are not registered");
-            }
-            else {
-                messageBox("You are successfully registered");
-            }
+
+                if (name == "" && surname == "" && idNumber == "" && contacts == "" && address == "" && province == "" && email == "" && password == "")
+                {
+                    messageBox("make sure all field are filled with correct values");
+                }
+                else
+                {
+                    Enroll newUser = new Enroll()
+                    {
+
+                        name = txtName.Text,
+                        surname = txtSurname.Text,
+                        idNumber = txtIdNumber.Text,
+                        contacts = txtContacts.Text,
+                        address = txtAddress.Text,
+                        province = txtProvince.Text,
+                        email = txtEmail.Text,
+                        password = txtPassword.Text
+                    };
+                    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("Registers.db");
+                    await conn.InsertAsync(newUser);
+                    if (model.getUser(idNo) == null)
+                    {
+                        messageBox("You are not registered");
+                    }
+                    else
+                    {
+                        messageBox("You are successfully registered");
+                    }
+                }
+            
 
 
         }
@@ -106,6 +126,16 @@ namespace InformationalApp
                 model.addCareers("Traffic Accommodation Officer \n Specialist: Risk Management \n Traffic Cop ", "Road and Traffic Management");
                
             }
+            if (model.getSubjectsOffered() == null)
+            {
+                model.addSubjectsOffered("Information Technology", "visual basics", "DSO17AT", "R1500");
+                model.addSubjectsOffered("Information Technology", "System software", "SSF30AT", "R1700");
+            }
+            if (model.getSubjectsDone()== null)
+            {
+                model.addSubjectsDone("Mathematics", "Information Technology");
+            }
+            
             base.OnNavigatedTo(e);
         }
 
@@ -118,6 +148,11 @@ namespace InformationalApp
         {
             var msgDlg = new Windows.UI.Popups.MessageDialog(msg);
             await msgDlg.ShowAsync();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UpdateInformationPage)); 
         }
     }
 }

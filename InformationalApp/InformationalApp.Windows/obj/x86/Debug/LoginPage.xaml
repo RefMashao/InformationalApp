@@ -13,7 +13,8 @@
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="588,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="246"/>
         <TextBlock HorizontalAlignment="Left" Margin="360,287,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="37" Width="138" FontSize="24"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="588,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="50"/>
-        <Button x:ConnectionId='1' Content="Login" HorizontalAlignment="Left" Margin="437,403,0,0" VerticalAlignment="Top"  Height="76" Width="201" FontSize="36"                       />
+        <Button x:ConnectionId='1' Content="Login" HorizontalAlignment="Left" Margin="437,412,0,0" VerticalAlignment="Top"  Height="67" Width="201" FontSize="36"                       />
+        <Button x:ConnectionId='2' x:Name="btnForgettenPassword" Content="Forget password" HorizontalAlignment="Left" Margin="686,412,0,0" VerticalAlignment="Top" Height="67" Width="315" FontSize="36"                                   />
 
     </Grid>
 </Page>

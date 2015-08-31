@@ -68,6 +68,9 @@
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\DashBoardPage.xbf">
       <PackagePath>DashBoardPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\forgetPasswordPage.xbf">
+      <PackagePath>forgetPasswordPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\HowTheyWorkPage.xbf">
       <PackagePath>HowTheyWorkPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -82,6 +85,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\PossibleCareerPage.xbf">
       <PackagePath>PossibleCareerPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\SubjectOfferedPage.xbf">
+      <PackagePath>SubjectOfferedPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\SubjectsDonePage.xbf">
+      <PackagePath>SubjectsDonePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\UpdateInformationPage.xbf">
+      <PackagePath>UpdateInformationPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\UpdatePage.xbf">
+      <PackagePath>UpdatePage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InformationalApp.Windows.xr.xml">
       <PackagePath>InformationalApp.Windows.xr.xml</PackagePath>

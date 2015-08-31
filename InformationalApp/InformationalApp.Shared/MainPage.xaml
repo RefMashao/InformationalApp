@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/home-background7.jpg"/>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="275,31,0,0" TextWrapping="Wrap" Text="Registration Page" VerticalAlignment="Top" Height="62" Width="498" FontSize="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="251,122,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="26" Width="111" FontSize="24"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="474,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
@@ -27,6 +30,7 @@
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="474,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.696,0.041" Width="210"/>
         <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="285,530,0,0" VerticalAlignment="Top" Width="165" FontSize="36" Height="78" RenderTransformOrigin="0.696,0.166" Click="btnRegister_Click"/>
         <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="501,530,0,0" VerticalAlignment="Top" Width="156" Height="78" Click="btnLogin_Click" FontSize="36"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="681,530,0,0" VerticalAlignment="Top" Width="186" Height="78" FontSize="36" Click="Button_Click"/>
 
 
     </Grid>

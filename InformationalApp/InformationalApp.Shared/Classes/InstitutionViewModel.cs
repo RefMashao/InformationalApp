@@ -13,14 +13,14 @@ namespace InformationalApp.Classes
         private int id = 0;
         public int ID
         {
-            get { return id; }
+            get { return Userid; }
             set
             {
-                if (id == value)
+                if (Userid == value)
                 {
                     return;
                 }
-                id = value;
+                Userid = value;
             }
         }
 
@@ -125,6 +125,93 @@ namespace InformationalApp.Classes
                 return select;
             }
         }
+        public void addSubjectsOffered(string course, string subjectName,string code, string price)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var insert = db.Insert(new SubjectsOffered()
+                {
+                    Id = 0,
+                    course = course,
+                    subjectName = subjectName,
+                    code = code,
+                    price = price
 
+                });
+
+            }
+        }
+        public SubjectsOffered getSubjectsOffered()
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<SubjectsOffered>("select * from SubjectsOffered").FirstOrDefault();
+                return select;
+            }
+        }
+        public void addSubjectsDone(string course, string subjectNamed)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var insert = db.Insert(new SubjectsDone()
+                {
+                    Id = 0,
+                    course = course,
+                    subjectNamed = subjectNamed
+                    
+
+                });
+
+            }
+        }
+        public SubjectsDone getSubjectsDone()
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<SubjectsDone>("select * from SubjectsDone").FirstOrDefault();
+                return select;
+            }
+        }
+        public void updateDetails(string name,string surname,string idNumber, string contacts,string address, string province)
+        {
+
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+
+                var Personaldetails = db.Query<Enroll>("update Enroll set name = '" + name + "', surname = '" + surname + "',contacts = '" + contacts + "',address = '" + address + "',province = '" + province + "'  where idNumber = '" + idNumber + "' ").FirstOrDefault();
+            }
+        }
+        public void updateLogin( string idNumber,string email, string password)
+        {
+
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var updateLogin = db.Query<Enroll>("update Enroll set email ='" + email + "',password ='" + password + "' where idNumber = '" + idNumber + "'").FirstOrDefault();
+
+            }
+        }
+        public Enroll getRegisteredUser(string idNo)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Enroll>("select * from Enroll where idNumber='" + idNo + "'").FirstOrDefault();
+                return select;
+                
+            }
+        }
+        public Enroll getRegisteredUserLogin(string idNo)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Enroll>("select * from Enroll where idNumber='" + idNo + "'").FirstOrDefault();
+                return select;
+
+            }
+        }
+
+       
+
+
+        public int Userid { get; set; }
     }
 }

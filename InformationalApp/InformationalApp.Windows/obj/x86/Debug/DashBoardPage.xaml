@@ -9,9 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="371,10,0,0" TextWrapping="Wrap" Text="Additional Information" VerticalAlignment="Top" Height="50" Width="550" FontSize="48"/>
-        <Button x:ConnectionId='1' Content="Possible Careeres" HorizontalAlignment="Left" Margin="368,125,0,0" VerticalAlignment="Top" Height="99" Width="377" FontSize="36"                     />
-        <Button x:ConnectionId='2' Content="How they Work" HorizontalAlignment="Left" Height="109" Margin="368,258,0,0" VerticalAlignment="Top" Width="377" FontSize="36"                       />
-        <Button Content="Subjects to be done&#xD;&#xA; in Secondary" HorizontalAlignment="Left" Margin="368,394,0,0" VerticalAlignment="Top" Width="377" Height="110" FontSize="36" />
+        <Button x:ConnectionId='1' Content="Possible Careers" HorizontalAlignment="Left" Margin="368,125,0,0" VerticalAlignment="Top" Height="99" Width="410" FontSize="36"                     />
+        <Button x:ConnectionId='2' Content="How they Work" HorizontalAlignment="Left" Height="100" Margin="368,252.031,0,0" VerticalAlignment="Top" Width="406.418" FontSize="36"                        RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Button.RenderTransform>
+                <CompositeTransform SkewY="0.218" TranslateY="0.742"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='3' Content="Subjects to be done&#xD;&#xA; in Secondary" HorizontalAlignment="Left" Margin="368,494,0,0" VerticalAlignment="Top" Width="410" Height="116" FontSize="36"                        />
+        <Button x:ConnectionId='4' Content="Subjects for the Course" HorizontalAlignment="Left" Margin="368,376,0,0" VerticalAlignment="Top" Width="410" Height="104" FontSize="36"                       />
 
     </Grid>
 </Page>

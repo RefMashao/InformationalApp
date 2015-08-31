@@ -68,6 +68,8 @@ namespace InformationalApp
                 dbase.CreateTable<Institution>();
                dbase.CreateTable<Courses>();
                dbase.CreateTable<Possible_Careers>();
+               dbase.CreateTable<SubjectsOffered>();
+               dbase.CreateTable<SubjectsDone>();
                 //await AddDataAsync();
                 //dbase.CreateTable<Login>();
                 //insertManually();

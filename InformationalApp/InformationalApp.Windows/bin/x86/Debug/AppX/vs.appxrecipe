@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-26T08:49:33.716</Modified>
+      <Modified>2015-08-27T20:49:25.042</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InformationalApp.Windows.exe">
       <PackagePath>InformationalApp.Windows.exe</PackagePath>
-      <Modified>2015-08-26T09:12:59.218</Modified>
+      <Modified>2015-08-31T08:25:06.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -82,15 +82,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-08-17T10:58:38.799</Modified>
+      <Modified>2015-08-31T08:11:13.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\CoursePage.xbf">
       <PackagePath>CoursePage.xbf</PackagePath>
-      <Modified>2015-08-24T13:38:07.585</Modified>
+      <Modified>2015-08-31T07:24:02.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\DashBoardPage.xbf">
       <PackagePath>DashBoardPage.xbf</PackagePath>
-      <Modified>2015-08-25T14:06:58.830</Modified>
+      <Modified>2015-08-26T15:45:48.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\forgetPasswordPage.xbf">
+      <PackagePath>forgetPasswordPage.xbf</PackagePath>
+      <Modified>2015-08-31T08:11:13.622</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\HowTheyWorkPage.xbf">
       <PackagePath>HowTheyWorkPage.xbf</PackagePath>
@@ -98,27 +102,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InstitutionPage.xbf">
       <PackagePath>InstitutionPage.xbf</PackagePath>
-      <Modified>2015-08-26T08:49:16.763</Modified>
+      <Modified>2015-08-31T07:17:05.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2015-08-19T12:53:50.176</Modified>
+      <Modified>2015-08-31T07:17:05.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-08-18T13:45:01.332</Modified>
+      <Modified>2015-08-27T20:46:19.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\PossibleCareerPage.xbf">
       <PackagePath>PossibleCareerPage.xbf</PackagePath>
       <Modified>2015-08-25T13:37:14.457</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\SubjectOfferedPage.xbf">
+      <PackagePath>SubjectOfferedPage.xbf</PackagePath>
+      <Modified>2015-08-31T07:24:02.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\SubjectsDonePage.xbf">
+      <PackagePath>SubjectsDonePage.xbf</PackagePath>
+      <Modified>2015-08-31T07:24:02.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\UpdateInformationPage.xbf">
+      <PackagePath>UpdateInformationPage.xbf</PackagePath>
+      <Modified>2015-08-27T20:49:24.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\UpdatePage.xbf">
+      <PackagePath>UpdatePage.xbf</PackagePath>
+      <Modified>2015-08-28T08:24:53.784</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\InformationalApp.Windows.xr.xml">
       <PackagePath>InformationalApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-08-26T08:49:16.724</Modified>
+      <Modified>2015-08-31T08:11:13.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-08-26T08:49:33.541</Modified>
+      <Modified>2015-08-27T20:49:24.890</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
