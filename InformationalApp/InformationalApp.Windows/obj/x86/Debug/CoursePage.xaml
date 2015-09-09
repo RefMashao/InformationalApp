@@ -9,6 +9,12 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid HorizontalAlignment="Left" Height="748" Margin="10,10,0,0" VerticalAlignment="Top" Width="1346">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF574C7A" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
             <ListView x:ConnectionId='1' x:Name="listView" HorizontalAlignment="Left" Height="542" Margin="60,130,0,0" VerticalAlignment="Top" Width="1136"                                             />
             <Button x:ConnectionId='2' Content="Back" HorizontalAlignment="Left" Margin="7,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.438,-1.447"                      Width="122" Height="62" FontSize="36"/>
             <TextBlock x:Name="tbDisplay" HorizontalAlignment="Left" Margin="270,29,0,0" TextWrapping="Wrap" Text="List of Courses Available!!!" VerticalAlignment="Top" Width="263" Height="37" FontSize="38" />

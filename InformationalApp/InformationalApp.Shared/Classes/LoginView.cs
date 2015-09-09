@@ -15,6 +15,8 @@ namespace InformationalApp.Classes
          private ObservableCollection<PossibleViewModel> name;
          private ObservableCollection<SubjectOfferedViewModel> offered;
          private ObservableCollection<SubjectsDoneViewModel> done;
+         private ObservableCollection<HowTheyWorkViewModel> work;
+         private ObservableCollection<InstitutionViewModel> list;
         public ObservableCollection<CoursesViewModel> Course
         {
             get { return course; }
@@ -48,6 +50,27 @@ namespace InformationalApp.Classes
                 }
             }
             return course;
+        }
+        public ObservableCollection<InstitutionViewModel> getInstituionList(string name)
+        {
+            string nam = name + "%";
+            list = new ObservableCollection<InstitutionViewModel>();
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                //var query = db.Table<Courses>();
+                var query = db.Query<Institution>("select * from Institution where institution  like '" + nam + "'");
+                foreach (var ins in query)
+                {
+                    var ins1 = new InstitutionViewModel()
+                    {
+                        ID = ins.Id,
+                        Insitution = ins.insitution,
+                        
+                    };
+                    list.Add(ins1);
+                }
+            }
+            return list;
         }
         public ObservableCollection<InstitutionViewModel> courses
         {
@@ -161,6 +184,27 @@ namespace InformationalApp.Classes
             }
             return done;
         }
+        public ObservableCollection<HowTheyWorkViewModel> getHowTheyWork(string names)
+        {
+            work = new ObservableCollection<HowTheyWorkViewModel>();
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                //var query = db.Table<Courses>();
+                var query = db.Query<HowTheyWork>("select * from HowTheyWork where course ='" + names + "'");
+                foreach (var ins in query)
+                {
+                    var ins1 = new HowTheyWorkViewModel()
+                    {
+                        ID = ins.Id,
+                        Course = ins.course,
+                        HowTheyWork = ins.howTheyWork,
+
+                    };
+                    work.Add(ins1);
+                }
+            }
+            return work;
+        }
         public Register getData(string email,string password)
         {
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
@@ -198,6 +242,14 @@ namespace InformationalApp.Classes
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
             {
                 var query = db.Query<SubjectsOffered>("select * from SubjectsOffered where course ='" + name + "'").FirstOrDefault();
+                return query;
+            }
+        }
+        public HowTheyWork getWorkId(string name)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var query = db.Query<HowTheyWork>("select * from HowTheyWork where course ='" + name + "'").FirstOrDefault();
                 return query;
             }
         }

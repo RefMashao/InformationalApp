@@ -10,7 +10,7 @@ namespace InformationalApp.Classes
     {
         private InformationalApp.App app = (Application.Current as App);
         private string userName = string.Empty;
-        private int id = 0;
+      
         public int ID
         {
             get { return Userid; }
@@ -35,6 +35,19 @@ namespace InformationalApp.Classes
                 { return; }
 
                 name = value;
+            }
+        }
+        private string insitution = string.Empty;
+        public string Insitution
+        {
+            get { return insitution; }
+
+            set
+            {
+                if (insitution == value)
+                { return; }
+
+                insitution = value;
             }
         }
         private string career = string.Empty;
@@ -125,6 +138,26 @@ namespace InformationalApp.Classes
                 return select;
             }
         }
+        public Institution getUserInstitution(string name)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Institution>("select * from Institution where insitution='" + name + "'").FirstOrDefault();
+                return select;
+            }
+        }
+      
+        public Institution getUserInstitution1(string name)
+        {
+            
+            string nam = name + "%";
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<Institution>("select * from Institution where insitution like '" + nam + "'").FirstOrDefault();
+                
+                return select;
+            }
+        }
         public void addSubjectsOffered(string course, string subjectName,string code, string price)
         {
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
@@ -169,6 +202,29 @@ namespace InformationalApp.Classes
             using (var db = new SQLite.SQLiteConnection(app.dbPath))
             {
                 var select = db.Query<SubjectsDone>("select * from SubjectsDone").FirstOrDefault();
+                return select;
+            }
+        }
+        public void addHowTheyWork(string course, string howTheyWork)
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var insert = db.Insert(new HowTheyWork()
+                {
+                    Id = 0,
+                    course = course,
+                    howTheyWork = howTheyWork
+
+
+                });
+
+            }
+        }
+        public HowTheyWork getHowTheyWork()
+        {
+            using (var db = new SQLite.SQLiteConnection(app.dbPath))
+            {
+                var select = db.Query<HowTheyWork>("select * from HowTheyWork").FirstOrDefault();
                 return select;
             }
         }

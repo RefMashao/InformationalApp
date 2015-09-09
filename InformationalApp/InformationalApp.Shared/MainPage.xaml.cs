@@ -135,7 +135,11 @@ namespace InformationalApp
             {
                 model.addSubjectsDone("Mathematics", "Information Technology");
             }
-            
+            if (model.getHowTheyWork() == null)
+            {
+                model.addHowTheyWork( "Information Technology","Assets/it.jpg");
+                model.addHowTheyWork("Policing", "Assets/download.jpg");
+            }
             base.OnNavigatedTo(e);
         }
 

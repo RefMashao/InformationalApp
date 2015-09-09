@@ -70,6 +70,7 @@ namespace InformationalApp
                dbase.CreateTable<Possible_Careers>();
                dbase.CreateTable<SubjectsOffered>();
                dbase.CreateTable<SubjectsDone>();
+               dbase.CreateTable<HowTheyWork>();
                 //await AddDataAsync();
                 //dbase.CreateTable<Login>();
                 //insertManually();

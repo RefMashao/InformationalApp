@@ -22,40 +22,43 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.10.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\Boston-martial-law1.jpg">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\Boston-martial-law1.jpg">
       <PackagePath>Assets\Boston-martial-law1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\cuba.national.assembly.jpg">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\cuba.national.assembly.jpg">
       <PackagePath>Assets\cuba.national.assembly.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\it.jpg">
-      <PackagePath>Assets\it.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\rpic.jpg">
-      <PackagePath>Assets\rpic.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\spic.jpg">
-      <PackagePath>Assets\spic.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\tpic.jpg">
-      <PackagePath>Assets\tpic.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\download.jpg">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\download.jpg">
       <PackagePath>Assets\download.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\home-background7.jpg">
+      <PackagePath>Assets\home-background7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\it.jpg">
+      <PackagePath>Assets\it.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\rpic.jpg">
+      <PackagePath>Assets\rpic.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\spic.jpg">
+      <PackagePath>Assets\spic.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\tpic.jpg">
+      <PackagePath>Assets\tpic.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Mod\Documents\Visual Studio 2013\Projects\InformationalApp\InformationalApp\InformationalApp.Shared\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

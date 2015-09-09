@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/home-background7.jpg"/>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="275,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="674" FontSize="48" >
         	<Run Text="Enter Required"/>
         	<Run Text=" Information"/>

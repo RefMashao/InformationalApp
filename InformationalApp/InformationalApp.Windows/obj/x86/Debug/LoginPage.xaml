@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/home-background7.jpg"/>
+        </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="360,37,0,0" TextWrapping="Wrap" Text="Login Page" VerticalAlignment="Top" Height="65" Width="304" FontSize="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="360,168,0,0" TextWrapping="Wrap" Text="Username/ Email" VerticalAlignment="Top" Height="56" Width="119" FontSize="24"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="588,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="246"/>

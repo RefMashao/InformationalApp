@@ -121,21 +121,6 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="InformationalApp.Windows_TemporaryKey.pfx" />
-    <None Include="Assets\packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\Boston-martial-law1.jpg" />
-    <Content Include="Assets\cuba.national.assembly.jpg" />
-    <Content Include="Assets\home-background7.jpg" />
-    <Content Include="Assets\it.jpg" />
-    <Content Include="Assets\Logo.scale-100.png" />
-    <Content Include="Assets\rpic.jpg" />
-    <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\spic.jpg" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.scale-100.png" />
-    <Content Include="Assets\tpic.jpg" />
-    <Content Include="Assets\download.jpg" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

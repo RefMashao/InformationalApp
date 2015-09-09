@@ -18,11 +18,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Courses.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\CoursesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Enroll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\HowTheyWork.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\HowTheyWorkViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Institution.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\InstitutionsModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\InstitutionViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Login.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\LoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\MainWindowViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Pirate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\PossibleViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Possible_Careers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Register.cs" />
@@ -30,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsDone.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsDoneViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\SubjectsOffered.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\TextSearchFilter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoursePage.xaml.cs">
       <DependentUpon>CoursePage.xaml</DependentUpon>
     </Compile>
@@ -116,5 +121,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Boston-martial-law1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cuba.national.assembly.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\download.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\home-background7.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\it.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\rpic.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\spic.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\tpic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Assets\packages.config" />
   </ItemGroup>
 </Project>
